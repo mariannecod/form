@@ -138,7 +138,13 @@
         {
         background-color: #006400;
         }
-  
+        
+        select
+        {
+            background-color:#005;
+            color:White;
+        }
+
         button[type=submit]
         {
             background-color: #000099;
