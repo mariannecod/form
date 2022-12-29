@@ -1,0 +1,154 @@
+    body
+    {
+        background: linear-gradient(221deg, #005bea 0%, #00c6fb 100%);
+        background-blend-mode: normal;
+    }
+
+
+    main
+    {
+        width: 100vw; 
+        height: 100vh;
+        margin: 25px 0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #div-form
+    {
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        box-shadow: 7px 7px 6px rgba(100,100,100,0.5);
+    }
+
+    fieldset
+    {
+        border:0px;
+        margin:5px;
+    }
+    
+    legend
+    {
+        font-weight:bold;
+        font-size:25px;
+    }
+    
+    #btn-modo-dark-light 
+    {
+        cursor:pointer;
+    }
+
+    #btn-modo-dark-light:before
+    {
+        content: "☀️";
+    }
+    
+    p
+    {
+        text-align: center;
+    }
+
+    label
+    {
+        display: block;
+        margin: 15px 5px;
+        font-family: 'Concert One', cursive;
+    }
+
+    input[type=text], input[type=email], input[type=tel]
+    {
+        min-width:75px;
+        width:97%;
+        height:28px;
+        border: none;
+    }
+    
+    input:valid
+    {
+        background-color: Gold;
+    }
+    
+    .btn-radio
+    {
+        margin: 1px;
+        padding:1px;
+    }
+
+    select
+    {
+        min-width:75px;
+        width:97%;
+    }
+
+    button[type=submit]
+    {
+        min-width:75px;
+        width:98%;
+        height:45px;
+        background-color:#00ccff; color:White;
+        border: none;
+        font-family: 'Concert One', cursive;
+        font-size:25px; cursor:pointer;
+        box-shadow: 0px 0px 15px rgba(0,0,20,0.2);
+    }
+    
+    button[type=submit]:disabled
+    {
+        background-color: #999;
+        color:rgba(200,200,200,0.5);
+        cursor:default;
+    }
+  
+    footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Dark Mode */
+    @media screen and (prefers-color-scheme: dark)
+    {
+        body
+        {
+            background: linear-gradient(221deg, #4A7E8C 0%, #061B3C 100%);
+        }
+        
+        #div-form
+        {
+            background-color: #001;
+            color:white;
+            box-shadow: 7px 7px 15px rgba(250,250,250,0.2), 1px 2px 7px 0.5px rgb(0,0,10,0.4) inset;
+        }
+        
+        #btn-modo-dark-light:before
+        {
+            content: "🌕";
+        }
+
+        input[type=text], input[type=email], input[type=tel]
+        {
+            background-color:#005;
+            color:White;
+            border:1px white solid;
+        }
+
+        input:valid
+        {
+        background-color: #006400;
+        }
+  
+        button[type=submit]
+        {
+            background-color: #000099;
+            box-shadow: 0 0 15px rgba(0,0,250,0.2);
+        }
+          
+        button[type=submit]:disabled
+        {
+            background-color: #115;
+            color:rgba(100,100,100,0.5);
+            cursor:default;
+        }
+    }
