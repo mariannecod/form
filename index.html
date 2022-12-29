@@ -7,17 +7,36 @@
 
         <title>Home</title>
 
-        <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
         
         <meta content=“width=device-width, initial-scale=1, maximum-scale=1” name=“viewport”>
         <meta name="description" content="Imobiliária de Sucesso com obras prontinhas para você, venha conferir os melhores apartamentos, coberturas, condomínios...">
 
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
         <style>
 
-            #flex { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; }
+            #flex
+            { 
+                width: 100vw; 
+                height: 100vh; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+            }
+	    
+	        #flex img
+            { 
+                cursor: pointer;
+            }
+	    
+            @media only screen and (max-width: 600px)
+            {
+                #flex img
+                {
+                    width: 95%;
+                    height: 100%;
+                }
+            }
         
         </style>
 
@@ -27,15 +46,16 @@
 
         <div id="flex">
 
-            <img src="img/banner-desktop.jpg" alt="Condomínio Chamber of Secrets Venha Conhecer" />
-
+	        <a href="FORMULÁRIOS/form-contact/index.html">
+                <img 
+                    src="img/banner-desktop.jpg"
+                    alt="Condomínio Chamber of Secrets Venha Conhecer"
+                    srcset="img/banner-desktop.jpg  1300w, img/banner-mobile.jpg 200w"
+                    sizes="(min-width:1300px) 1300px, (min-width: 200px) 200px"
+                />
+            </a>
+        
         </div>
-
-        <script>
-
-
-
-        </script>
 
     </body>
 
