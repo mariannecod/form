@@ -8,3 +8,4 @@ Baixei o arquivo e coloque o primeiro index.html no seu navegador que ele vai fu
 
 # Captura de Tela
 ![alt text](/img/form-modo-dark.png)
+![alt text](/img/form-modo-light.png)
