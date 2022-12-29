@@ -1,10 +1,10 @@
 # form
 
-Informação:
-Os comentarios com ¿ ? são explicações de porque fiz isso num codigo normal eles não existiriiam
+# Informação:
+Os comentários com (¿ ?) são explicações de porque fiz isso, num código normal eles não existiriam
 
-instruções:
-Baixei o arquivo e coloque o primeiro index.html no seu navegador que ele vai funcionar
+# instruções:
+Baixei o arquivo e coloque o primeiro index.html no seu navegador para ver este pequeno projeto.
 
 # Captura de Tela
 ![alt text](/img/form-modo-dark.png)
