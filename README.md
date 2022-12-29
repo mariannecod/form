@@ -1,4 +1,5 @@
 # form
+Um pequeno projeto de formulário somente com o front-end.
 
 # Informação:
 Os comentários com (¿ ?) são explicações de porque fiz isso, num código normal eles não existiriam
