@@ -16,6 +16,8 @@
          <!-- ¿ Como é um formulário considero melhor não indexar ? -->
         <meta name="robots" content="noindex,nofollow">
 
+        <link rel="stylesheet" href="index.css">
+
     </head>
 
     <body>
@@ -150,25 +152,8 @@
         
         </footer>
 
-        <script>
-
-            //Máscara Telefone
-            const input_tel = document.getElementById('phone');
-    
-            input_tel.addEventListener('input', function(e) {MascaraTelefone(e.target.value)});
-            input_tel.addEventListener('change', function(e) {MascaraTelefone(e.target.value)});
-    
-            function MascaraTelefone(valor) 
-            {
-            
-                valor = valor.replace(/\D/g, "");
-                valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
-                valor = valor.replace(/(\d)(\d{4})$/, "$1-$2");
-                
-                input_tel.value = valor;
-            };
-
-        </script>
+        <script type="text/javascript" src="index.js"></script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
     </body>
 
