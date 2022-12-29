@@ -5,7 +5,7 @@ Um pequeno projeto de formulário somente com o front-end.
 Os comentários com (¿ ?) são explicações de porque fiz isso, num código normal eles não existiriam
 
 # instruções:
-Baixei o arquivo e coloque o primeiro index.html no seu navegador para ver este pequeno projeto.
+Baixe o arquivo e coloque o primeiro index.html no seu navegador para ver este pequeno projeto.
 
 # Captura de Tela
 ![alt text](/img/form-modo-dark.png)
