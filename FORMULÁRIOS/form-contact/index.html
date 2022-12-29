@@ -15,7 +15,7 @@
         <meta name="description" content="Formulário de contato da imobiliária imóveis">
          <!-- ¿ Como é um formulário considero melhor não indexar ? -->
         <meta name="robots" content="noindex,nofollow">
-        
+
     </head>
 
     <body>
@@ -61,6 +61,7 @@
                                 id="email"
                                 name="email"
                                 autocomplete="email"
+                                pattern="^([\w\-]+\.)*[\w\- ]+@([\w\- ]+\.)+([\w\-]{2,3})$"
                                 aria-label="Informe o seu e-mail"
                                 aria-required="true"
                                 required
@@ -72,38 +73,68 @@
 
                             <label for="phone">Telefone ou Celular:</label>
 
-			                <input
-                                type="tel"
-                                id="phone" 
-                                name="phone"
-                                autocomplete="phone"
-                                minlength="14"
-                                maxlength="15"
-                                pattern="\(\d{2}\)\s*\d{4|5}-\d{4}"
-                                aria-label="Informe o seu número de telefone fixo ou celular"
-                                aria-required="true"
-                                required
-                            />
+			                <input type="tel" id="phone" name="phone" minlength="14" maxlength="15" pattern="\(\d{2}\)\s*\d{4,5}-\d{4}" required>
 
                         </div>
-
+                        
                         <div>
-
+                        
                             <label> Você Autoriza Contato Telefônico:
+                       <label for="tel-yes" class="btn-radio">
+                        <input type="radio" id="tel-yes"  name="contato-tel" value="Sim" aria-required="true" required>
+                        Sim
+                       </label>
+                        <label for="tel-no" class="btn-radio"><input type="radio" id="tel-no"  name="contato-tel" value="Não">
+                        Não</label>
+                        </label>
+                        </div>
+                        
+                        
+                        <div>
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="text" name="data" id="data" minlength="10" maxlength="10" pattern="[0-9]{2}\/[0-1]{1}[0-9]{1}\/[0-9]{4}$" required/>
+                        </div>
+                        
+                        <div>
+                        <label for="bairros">Bairro de interesse:</label>
+                        <select id ="bairros" name="linguagens" size="10" multiple="multiple" required />
+                            <optgroup label="Bairros Nobres">
+                            <option value="Aracaju">Aracaju</option>
+                            <option value="Monte Real">Monte Real</option>
+                            <option value="Cascasta">Cascasta</option>
+                            </optgroup>
 
-                                <input type="radio" id="tel-yes" name="contato-tel" value="Sim" aria-required="true" required>
-                                <label for="tel-yes">Sim</label>
+                            <optgroup label="Bairros ao Centro">
+                            <option value="Centro">Centro</option>
+                            <option value="Danilo Peçanha">Danilo Peçanha</option>
+                            <option value="Januário Gomes">Januário Gomes</option>
+                            </optgroup>
 
-                                <input type="radio" id="tel-no" name="contato-tel" value="Não">
-                                <label for="tel-no">Não</label>
-                            
-                            </label>
+                            <optgroup label="Outros Bairros">
+                            <option value="Alvorada">Alvorada</option>
+                            <option value="Cabral">Cabral</option>
+                            <option value="Zequinha">Zequinha</option>
+                            </optgroup>
 
-                            </div>
-
+                            </select>
+                        </div>
+                        
+			<div>
+			<label>Qual é a melhor momento para entrar em contato:
+			<label for="dia">
+			<input type="checkbox" id="checkbox-dia" name="manhã" value="Manhã">
+                Manhã - 09:00h - 11:30h </label>
+            <label for="tarde"><input type="checkbox" id="checkbox-tarde" name="tarde" value="Tarde">
+            Tarde - 14:00h - 17:15h </label>
+            <label for="noite"><input type="checkbox" id="checkbox-noite" name="noite" value="Noite">
+            Noite - 19:00h - 21:30h </label>
+  
+	        </label>
+			</div>
+			
                         <div class="button">
 
-                            <button type="submit">Enviar sua mensagem</button>
+                            <button id="enviar" type="submit" disabled>Enviar sua mensagem </button>
 
                         </div>
 
